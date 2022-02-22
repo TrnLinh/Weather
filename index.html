@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="js/node_modules/sal.js/dist/sal.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <input type="text" class="search-bar" placeholder="Search for city" />
+        <button>
+          <ion-icon name="search-outline" class="search-icon"></ion-icon>
+        </button>
+      </header>
+      <div class="wrap">
+        <div class="weather">
+          <div class="main-section">
+            <div class="wrap">
+              <div class="grid-container">
+                <div class="container left">
+                  <div class="wrap">
+                    <div class="temp-container">
+                      <div class="temp">37°C</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="wrap">
+                    <div class="right-grid">
+                      <div class="city-container">
+                        <div class="city">Hanoi</div>
+                      </div>
+                      <img src="" alt="" class="icon" />
+                      <div class="sub-info-container">
+                        <div class="dis-container">
+                          <div class="description">Cloudy</div>
+                        </div>
+                        <div class="hum-container">
+                          <div>
+                            <div class="header">Humidity</div>
+                            <div class="humidity">60%</div>
+                          </div>
+
+                          <ion-icon name="water-outline"></ion-icon>
+                        </div>
+                        <div class="wind-container">
+                          <div>
+                            <div class="header">Wind speed</div>
+                            <div class="wind">4m/s</div>
+                          </div>
+                          <ion-icon name="flower-outline"></ion-icon>
+                        </div>
+                        <div class="min-max-container">
+                          <div>
+                            <div class="header">Min / Max</div>
+                            <span class="min">30°C /</span>
+                            <span class="max">34°C</span>
+                          </div>
+                          <ion-icon name="thermometer-outline"></ion-icon>
+                        </div>
+                        <div class="time-zone-container">
+                          <div>
+                            <div class="header">Time zone</div>
+                            <div class="time-zone">7</div>
+                          </div>
+
+                          <ion-icon name="time-outline"></ion-icon>
+                        </div>
+                        <div class="pressure-container">
+                          <div class="header">Pressure</div>
+                          <div class="pressure">1000 hPa</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/node_modules/sal.js/dist/sal.js"></script>
+    <script>
+      sal();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
